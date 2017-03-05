@@ -5,8 +5,88 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="header">
+      <div class="header-top">
+        <nav class="main-nav main-nav--visible">
+          <span class="main-nav__close">Закрыть меню</span>
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </nav>
+        <div class="header-top__???"> <!-- Не знаю как назвать блок с бургером и лого -->
+          <a class="header-top__logo"><img src="#" alt="City of Sedona" width="110" height="83"></a>
+          <span class="header-top__main-nav-show">Показать меню</span>
+        </div>
+      <div class="header-bottom">
+        <p class="header-top__tagline">Welcome <span class="tagline-top-sub">-- to the gorgeous --</span></p>
+        <h1 class="header-top__headline">Sedona</h1>
+        <p class="header-top__tagline header-top__tagline--bottom">"Becouse the Grand Canyon lucks!"</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-top">
+        <h2 class="main-top__headline">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
+        <p class="main-top__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+      <ul class="main-info">
+        <li class="main-info__item main-info__item--city">
+          <h3 class="main-info__headline">Настоящий городок</h3>
+          <span class="main-info_number">- №1 -</span>
+          <p class="main-info__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img class="main-info__img" src="#" alt="Городок Седона" width="520" height="260">
+          <ul class="city-desc">
+            <li class="city-desc__item">
+              <h3 class="city-desc__headline">Жилье</h3>
+              <p class="city-desc__text">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+            </li>
+            <li class="city-desc__item">
+              <h3 class="city-desc__headline">Сувениры</h3>
+              <p class="city-desc__text">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="city-desc__item">
+              <h3 class="city-desc__headline">Еда</h3>
+              <p class="city-desc__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="main-info__item main-info__item--bridge">
+          <h3 class="main-info__headline">Там есть мост дьявола</h3>
+          <span class="main-info_number">- №2 -</span>
+          <p class="main-info__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img class="main-info__img" src="#" alt="Мост Дьявола" width="520" height="260">
+        </li>
+        <li class="main-info__item">
+          <h3 class="main-info__headline">Небольшая площадь</h3>
+          <span class="main-info_number">- №3 -</span>
+          <p class="main-info__text">Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="main-info__item">
+          <h3 class="main-info__headline">Красивая дорога</h3>
+          <span class="main-info_number">- №4 -</span>
+          <p class="main-info__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="main-info__item">
+          <h3 class="main-info__headline">Мало туристов</h3>
+          <span class="main-info_number">- №5 -</span>
+          <p class="main-info__text">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
+      <div class="main-bottom">
+        <h2 class="main-bottom__headline">Заинтересовались?</h2>
+        <p class="main-bottom__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+        <a class="main-bottom__btn" href="form.html">Найти гостиницу</a>
+        <img class="main-bottom__map" src="#" alt="Седона находится в Аризонет под Флагстаффом(Flagstaff)" width="320" height="350">
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__hashtag">#VisitSedona</p>
+      <ul class="social">
+        <li class="social__item social__item--twitter"><a href="">Twitter</a></li>
+        <li class="social__item social__item--facebook"><a href="">Facebook</a></li>
+        <li class="social__item social__item--youtube"><a href="">Youtube</a></li>
+      </ul>
+      <span class="footer__htmlacademy">Разработано</span>
+    </footer>
   </body>
 </html>

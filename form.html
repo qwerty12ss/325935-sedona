@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <nav class="main-nav main-nav--visible">
+          <span class="main-nav__close">Закрыть меню</span>
+          <li class="main-nav__item"><a href="index.html">Главная<a></li>
+          <li class="main-nav__item"><a>Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </nav>
+        <div class="header-top__???"> <!-- Не знаю как назвать блок с бургером и лого -->
+          <a class="header-top__logo" href="index.html"><img src="#" alt="City of Sedona" width="110" height="83"></a>
+          <span class="header-top__main-nav-show">Показать меню</span>
+        </div>
+      <div class="header-bottom header-bottom--second">
+        <h1 class="header-top__headline">Sedona</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-top">
+        <h2 class="main-top__headline">Оставьте свой отзыв</h2>
+        <p class="main-top__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="main-form" method="post" action="https://echo.htmlacademy.ru/">
+        <fieldset class="main-form__cell">
+          <h2 class="main-form__headline">Представьтесь:</h2>
+          <label class="main-form__label main-form__label--introduce" for="first-name">Имя*:</label>
+          <input class="main-form__input main-form__input--introduce" type="text" name="first-name" id="first-name">
+          <label class="main-form__label main-form__label--introduce" for="last-name">Фамилия*:</label>
+          <input class="main-form__input main-form__input--introduce" type="text" name="last-name" id="last-name">
+          <label class="main-form__label main-form__label--introduce" for="father-name">Отчество:</label>
+          <input class="main-form__input main-form__input--introduce" type="text" name="father-name" id="father-name">
+        </fieldset>
+        <fieldset class="main-form__cell">
+          <h2 class="main-form__headline">Контактная информация:</h2>
+          <label class="main-form__label main-form__label--contacts" for="tel">Контактный телефон*:</label>
+          <input class="main-form__input main-form__input--contacts" type="text" name="tel" id="tel" placeholder="Введите телефон">
+          <p class="main-form__incorrect">Ошибка, перепроверьте номер</p>
+          <label class="main-form__label main-form__label--contacts" for="email">Электронная почта*:</label>
+          <input class="main-form__input main-form__input--contacts" type="text" name="email" id="email" placeholder="Введите e-mail">
+        </fieldset>
+        <fieldset class="main-form__cell">
+          <h2 class="main-form__headline">Ваше общее впечатление:</h2>
+          <label class="main-form__label--bold"><input class="main-form__element--visible" type="radio" name="rating" value="Скорее положительное" checked><span class="main-form__radio-btn"></span>Скорее положительное</label>
+          <label class="main-form__label--bold"><input class="main-form__element--visible" type="radio" name="rating" value="Скорее отрицательное"><span class="main-form__radio-btn"></span>Скорее отрицательное</label>
+          <label class="main-form__label--bold"><input class="main-form__element--visible" type="radio" name="rating" value="Затрудняюсь ответить"><span class="main-form__radio-btn"></span>Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="main-form__cell">
+          <h2 class="main-form__headline">Посещенные достопримечательности:</h2>
+          <label class="main-form__label--bold"><input class="main-form__element--visible" type="checkbox" name="visited" value="Мост Дьявола" checked><span class="main-form__checkbox-btn">Мост Дьявола</label>
+          <label class="main-form__label--bold"><input class="main-form__element--visible" type="checkbox" name="visited" value="Слайд-парк" checked><span class="main-form__checkbox-btn">Слайд-парк</label>
+          <label class="main-form__label--bold"><input class="main-form__element--visible" type="checkbox" name="visited" value="Гора-Колокол"><span class="main-form__checkbox-btn">Гора-Колокол</label>
+          <label class="main-form__label--bold"><input class="main-form__element--visible" type="checkbox" name="visited" value="Красные скалы" checked><span class="main-form__checkbox-btn">Красные скалы</label>
+        </fieldset>
+        <fieldset class="main-form__cell">
+          <h2 class="main-form__headline">Опишите свои эмоции:</h2>
+          <textarea class="main-form__emotion"></textarea>
+        </fieldset>
+        <button class="main-form__submit-btn" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <p class="footer__hashtag">#VisitSedona</p>
+      <ul class="social">
+        <li class="social__item social__item--twitter"><a href="">Twitter</a></li>
+        <li class="social__item social__item--facebook"><a href="">Facebook</a></li>
+        <li class="social__item social__item--youtube"><a href="">Youtube</a></li>
+      </ul>
+      <span class="footer__htmlacademy">Разработано</span>
+    </footer>
+  </body>
+</html>
