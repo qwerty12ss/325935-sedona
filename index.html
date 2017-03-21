@@ -5,8 +5,86 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="header">
+      <div class="header-top">
+        <nav class="main-nav main-nav--visible">
+          <button class="main-nav__toggle" type="button">Показать меню</button>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </nav>
+        <a class="header-top__logo"><img src="#" alt="City of Sedona" width="110" height="83"></a>
+      </div>
+      <div class="header-bottom">
+        <img class="header-bottom__title" src="#" alt="Sedona" >
+      </div>
+    </header>
+    <main>
+      <div class="page-info">
+        <h2 class="page-info__title">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
+        <p class="page-info__desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+      <section class="sedona-advantage sedona-advantage--big">
+        <div class="sedona-advantage__info sedona-advantage__info--right">
+          <h3 class="sedona-advantage__title">Настоящий городок</h3>
+          <span class="sedona-advantage__number">- №1 -</span>
+          <p class="sedona-advantage__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img class="sedona-advantage__img" src="#" alt="Городок Седона" width="520" height="260">
+        <ul class="sedona-advantage__city-info">
+          <li class="sedona-advantage__city-info-item sedona-advantage__city-info-item--house">
+            <h3 class="sedona-advantage__city-info-title">Жилье</h3>
+            <p class="sedona-advantage__city-info-desc">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+          </li>
+          <li class="sedona-advantage__city-info-item sedona-advantage__city-info-item--souvenir">
+            <h3 class="sedona-advantage__city-info-title">Сувениры</h3>
+            <p class="sedona-advantage__city-inf-desc">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="sedona-advantage__city-info-item sedona-advantage__city-info-item--food">
+            <h3 class="sedona-advantage__city-info-title">Еда</h3>
+            <p class="sedona-advantage__city-info-desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="sedona-advantage sedona-advantage--big">
+        <div class="sedona-advantage__info sedona-advantage__info--left">
+          <h3 class="sedona-advantage__title">Там есть мост дьявола</h3>
+          <span class="sedona-advantage__number">- №2 -</span>
+          <p class="sedona-advantage__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <img class="sedona-advantage__img" src="#" alt="Мост Дьявола" width="520" height="260">
+      </section>
+      <section class="sedona-advantage">
+        <h3 class="sedona-advantage__title">Небольшая площадь</h3>
+        <span class="sedona-advantage__number">- №3 -</span>
+        <p class="sedona-advantage__desc">Все достопримечательности находятся очень близко</p>
+      </section>
+      <section class="sedona-advantage">
+        <h3 class="sedona-advantage__title">Красивая дорога</h3>
+        <span class="sedona-advantage__number">- №4 -</span>
+        <p class="sedona-advantage__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </section>
+      <section class="sedona-advantage">
+        <h3 class="sedona-advantage__title">Мало туристов</h3>
+        <span class="sedona-advantage__number">- №5 -</span>
+        <p class="sedona-advantage__desc">Большинство едет в Гранд Каньон и толпится там</p>
+      </section>
+      <div class="choice-hotels">
+        <h2 class="choice-hotels__title">Заинтересовались?</h2>
+        <p class="choice-hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+        <a class="choice-hotels__search-btn" href="form.html">Найти гостиницу</a>
+        <img class="choice-hotels__map" src="#" alt="Седона находится в Аризоне под Флагстаффом(Flagstaff)" width="320" height="350">
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__hashtag">#VisitSedona</p>
+      <ul class="social">
+        <li class="social__icon social__icon--twitter"><a href="#">Twitter</a></li>
+        <li class="social__icon social__icon--facebook"><a href="#">Facebook</a></li>
+        <li class="social__icon social__icon--youtube"><a href="#">Youtube</a></li>
+      </ul>
+      <div class="footer__copyright">Разработано</div>
+    </footer>
   </body>
 </html>
