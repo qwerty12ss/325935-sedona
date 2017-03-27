@@ -3,35 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header-top">
         <nav class="main-nav main-nav--visible">
-          <button class="main-nav__toggle" type="button">Показать меню</button>
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+          <button class="main-nav__toggle main-nav__toggle--burger" type="button">Показать меню</button>
+          <ul class="main-nav__list main-nav__list--visible">
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
         </nav>
-        <a class="header-top__logo"><img src="#" alt="City of Sedona" width="110" height="83"></a>
+        <a class="header-top__logo"><img src="img/logo-sedona-mobile.svg" alt="City of Sedona" width="102" height="83"></a>
       </div>
       <div class="header-bottom">
-        <img class="header-bottom__title" src="#" alt="Sedona" >
+        <img class="header-bottom__title" src="img/text-sedona-index.svg" alt="Sedona" >
       </div>
     </header>
     <main>
       <div class="page-info">
-        <h2 class="page-info__title">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
+        <h2 class="page-info__title">Седона &#8211; небольшой городок в Аризоне, заслуживающий большего</h2>
         <p class="page-info__desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
-      <section class="sedona-advantage sedona-advantage--big">
-        <div class="sedona-advantage__info sedona-advantage__info--right">
-          <h3 class="sedona-advantage__title">Настоящий городок</h3>
-          <span class="sedona-advantage__number">- №1 -</span>
-          <p class="sedona-advantage__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <section class="sedona-advantage sedona-advantage--big sedona-advantage--bg-triangle">
+        <div class="sedona-advantage__info sedona-advantage__info--blue sedona-advantage__info--padding-big sedona-advantage__info--right">
+          <h3 class="sedona-advantage__title sedona-advantage__title--white">Настоящий городок</h3>
+          <span class="sedona-advantage__number sedona-advantage__number--white">&#8211; №1 &#8211;</span>
+          <p class="sedona-advantage__desc sedona-advantage__desc--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="sedona-advantage__img" src="#" alt="Городок Седона" width="520" height="260">
+        <img class="sedona-advantage__img" src="img/photo-city@1x.jpg" alt="Городок Седона" width="520" height="260">
         <ul class="sedona-advantage__city-info">
           <li class="sedona-advantage__city-info-item sedona-advantage__city-info-item--house">
             <h3 class="sedona-advantage__city-info-title">Жилье</h3>
@@ -39,7 +42,7 @@
           </li>
           <li class="sedona-advantage__city-info-item sedona-advantage__city-info-item--souvenir">
             <h3 class="sedona-advantage__city-info-title">Сувениры</h3>
-            <p class="sedona-advantage__city-inf-desc">Не только китайского, но и местного производства!</p>
+            <p class="sedona-advantage__city-info-desc">Не только китайского, но и местного производства!</p>
           </li>
           <li class="sedona-advantage__city-info-item sedona-advantage__city-info-item--food">
             <h3 class="sedona-advantage__city-info-title">Еда</h3>
@@ -48,41 +51,47 @@
         </ul>
       </section>
       <section class="sedona-advantage sedona-advantage--big">
-        <div class="sedona-advantage__info sedona-advantage__info--left">
-          <h3 class="sedona-advantage__title">Там есть мост дьявола</h3>
-          <span class="sedona-advantage__number">- №2 -</span>
-          <p class="sedona-advantage__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <div class="sedona-advantage__info sedona-advantage__info--blue sedona-advantage__info--left">
+          <h3 class="sedona-advantage__title sedona-advantage__title--white">Там есть мост дьявола</h3>
+          <span class="sedona-advantage__number sedona-advantage__number--white">&#8211; №2 &#8211;</span>
+          <p class="sedona-advantage__desc sedona-advantage__desc--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="sedona-advantage__img" src="#" alt="Мост Дьявола" width="520" height="260">
+        <img class="sedona-advantage__img" src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола" width="520" height="260">
       </section>
       <section class="sedona-advantage">
-        <h3 class="sedona-advantage__title">Небольшая площадь</h3>
-        <span class="sedona-advantage__number">- №3 -</span>
-        <p class="sedona-advantage__desc">Все достопримечательности находятся очень близко</p>
+        <div class="sedona-advantage__info sedona-advantage__info--gray">
+          <h3 class="sedona-advantage__title">Небольшая площадь</h3>
+          <span class="sedona-advantage__number">&#8211; №3 &#8211;</span>
+          <p class="sedona-advantage__desc">Все достопримечательности находятся очень близко</p>
+        </div>
       </section>
       <section class="sedona-advantage">
-        <h3 class="sedona-advantage__title">Красивая дорога</h3>
-        <span class="sedona-advantage__number">- №4 -</span>
-        <p class="sedona-advantage__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <div class="sedona-advantage__info sedona-advantage__info--gray">
+          <h3 class="sedona-advantage__title">Красивая дорога</h3>
+          <span class="sedona-advantage__number">&#8211; №4 &#8211;</span>
+          <p class="sedona-advantage__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
       </section>
       <section class="sedona-advantage">
-        <h3 class="sedona-advantage__title">Мало туристов</h3>
-        <span class="sedona-advantage__number">- №5 -</span>
-        <p class="sedona-advantage__desc">Большинство едет в Гранд Каньон и толпится там</p>
+        <div class="sedona-advantage__info sedona-advantage__info--gray sedona-advantage__info--border-none">
+          <h3 class="sedona-advantage__title">Мало туристов</h3>
+          <span class="sedona-advantage__number">&#8211; №5 &#8211;</span>
+          <p class="sedona-advantage__desc">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
       </section>
       <div class="choice-hotels">
         <h2 class="choice-hotels__title">Заинтересовались?</h2>
         <p class="choice-hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
         <a class="choice-hotels__search-btn" href="form.html">Найти гостиницу</a>
-        <img class="choice-hotels__map" src="#" alt="Седона находится в Аризоне под Флагстаффом(Flagstaff)" width="320" height="350">
+        <img class="choice-hotels__map" src="img/bg-map-mobile@1x.jpg" alt="Седона находится в Аризоне под Флагстаффом(Flagstaff)" width="320" height="350">
       </div>
     </main>
     <footer class="footer">
       <p class="footer__hashtag">#VisitSedona</p>
       <ul class="social">
-        <li class="social__icon social__icon--twitter"><a href="#">Twitter</a></li>
-        <li class="social__icon social__icon--facebook"><a href="#">Facebook</a></li>
-        <li class="social__icon social__icon--youtube"><a href="#">Youtube</a></li>
+        <li><a href="#" class="social__icon social__icon--twitter">Twitter</a></li>
+        <li><a href="#" class="social__icon social__icon--facebook">Facebook</a></li>
+        <li><a href="#" class="social__icon social__icon--youtube">Youtube</a></li>
       </ul>
       <div class="footer__copyright">Разработано</div>
     </footer>

@@ -1,0 +1,91 @@
+@mixin font-style-header {
+  color: $font-color-base;
+  font-family: $font-family-bold;
+  font-size: $font-size-header;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin font-style-header-secondary {
+  color: $font-color-secondary;
+  font-family: $font-family-bold;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin font-style-header-bigger {
+  color: $font-color-base;
+  font-family: $font-family-bold;
+  font-size: $font-size-header-bigger;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin font-style-header-small {
+  color: $font-color-base;
+  font-family: $font-family-bold;
+  font-size: $font-size-regular;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin font-style-btn {
+  color: $font-color-secondary;
+  font-family: $font-family-bold;
+  font-size: $font-size-header-bigger;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@mixin font-style-menu {
+  color: $font-color-secondary;
+  font-family: $font-family-bold;
+  text-transform: uppercase;
+  font-size: $font-size-menu;
+  font-weight: 700;
+}
+
+@mixin font-style-regular {
+  color: $font-color-base;
+  font-family: $font-family-regular;
+  font-size: $font-size-regular;
+  text-transform: uppercase;
+}
+
+@mixin font-style-regular-secondary {
+  color: $font-color-secondary;
+  font-family: $font-family-regular;
+  font-size: $font-size-regular;
+  text-transform: uppercase;
+}
+
+@mixin font-style-radio{
+  color: $font-color-base;
+  font-family: $font-family-bold;
+  font-size: $font-size-header;
+  text-transform: none;
+}
+
+@mixin font-style-placeholder {
+  color: $font-color-base;
+  font-family: $font-family-bold;
+  font-size: $font-size-header;
+}
+
+@mixin font-style-photo-autor {
+  color: $font-color-base;
+  font-family: $font-family-regular;
+  font-size: $font-size-regular;
+}
+
+@mixin font-style-photo-like {
+  color: $font-color-base;
+  font-family: $font-family-bold;
+  font-size: $font-size-regular;
+}
+
+@mixin font-style-invalid-message {
+  color: $invalid-message-font-color;
+  font-family: $font-family-regular;
+  font-size: $font-size-regular;
+}

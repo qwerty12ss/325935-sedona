@@ -1,0 +1,45 @@
+.photo {
+  width: 280px;
+  margin: 0 auto;
+  padding: 23px 20px 0 20px;
+  border-top: 1px solid $sedona-advantage-border-color;
+}
+
+.photo__img {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 19px;
+}
+
+.photo__title {
+  margin-bottom: 5px;
+  @include font-style-header-small;
+}
+
+.photo__autor {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  @include font-style-photo-autor;
+}
+
+.photo__like {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 35px;
+  text-decoration: none;
+  @include font-style-photo-like;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/icon-like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

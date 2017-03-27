@@ -1,0 +1,118 @@
+.video-presentation-clip {
+
+}
+
+.video-presentation-clip__img {
+  position: relative;
+  width: 321px;
+  height: 201px;
+  z-index: -1000;
+}
+
+.video-presentation-clip__time {
+  position: relative;
+  width: 258px;
+  height: 23px;
+  margin: 0 auto;
+  margin-top: -50px;
+  padding-left: 22px;
+  padding-top: 22px;
+  background-color: $video-time-bg-color;
+  z-index: 20;
+}
+
+.video-presentation-clip__time-bar {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: $video-time-bar-color;
+}
+
+.video-presentation-clip__time-slider {
+  width: 9px;
+  height: 8.7px;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: $video-time-slider-color;
+  position: absolute;
+  left: 36px;
+  top: -3px;
+}
+
+.video-presentation-clip__control-bar {
+  position: relative;
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;;
+  background-color: $video-control-bar-bg-color;
+}
+
+.video-presentation-clip__control-btn {
+  position: absolute;
+
+  &--replay {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    outline: none;
+    top: 22px;
+    left: 25px;
+    background: none;
+    background-image: url(../img/icon-video-replay.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--replay:hover {
+
+  }
+
+  &--replay:active {
+
+  }
+
+  &--cc {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    outline: none;
+    top: 23px;
+    left: 174px;
+    background: none;
+    background-image: url(../img/icon-video-subtitles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--cc:hover {
+
+  }
+
+  &--cc:active {
+
+  }
+
+  &--fullscreen {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    outline: none;
+    top: 23px;
+    left: 237px;
+    background: none;
+    background-image: url(../img/icon-video-fullscreen.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

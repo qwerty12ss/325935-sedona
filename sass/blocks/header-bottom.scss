@@ -1,0 +1,15 @@
+.header-bottom {
+  width: 320px;
+  height: 299px;
+  margin-top: -30px;
+  padding-top: 90px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $title-sedona-background;
+
+  &--secondary {
+    height: 106px;
+    padding-top: 52px;
+  }
+}
