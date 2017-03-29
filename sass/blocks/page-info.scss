@@ -5,16 +5,18 @@
 }
 
 .page-info__title {
+  @include font-style-bold;
   text-align: center;
+  padding: 0 30px;
+  margin: 0;
   margin-bottom: 28px;
   line-height: 26px;
-  @include font-style-header;
 }
 
 .page-info__desc {
-  width: 250px;
+  @include font-style-regular;
+  width: 280px;
   margin: 0 auto;
   text-align: center;
   line-height: 26px;
-  @include font-style-regular;
 }

@@ -4,12 +4,12 @@
   margin: 0 auto;
   text-align: center;
   border-top: 1px solid $sedona-advantage-border-color;
-  margin-bottom: 75px;
+  margin-bottom: 138px;
 }
 
 .video-presentation__title {
   margin-bottom: 30px;
-  @include font-style-header;
+  @include font-style-bold;
 }
 
 .video-presentation__text {

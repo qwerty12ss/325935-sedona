@@ -1,5 +1,5 @@
 .video-presentation-clip {
-
+  position: relative;
 }
 
 .video-presentation-clip__img {
@@ -9,14 +9,20 @@
   z-index: -1000;
 }
 
+.video-presentation-clip__control__panel {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 156px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .video-presentation-clip__time {
   position: relative;
-  width: 258px;
-  height: 23px;
+  width: 236px;
   margin: 0 auto;
-  margin-top: -50px;
-  padding-left: 22px;
-  padding-top: 22px;
+  padding: 22px 22px 20px 22px;
   background-color: $video-time-bg-color;
   z-index: 20;
 }
@@ -30,7 +36,7 @@
 
 .video-presentation-clip__time-slider {
   width: 9px;
-  height: 8.7px;
+  height: 9px;
   padding: 0;
   border: none;
   outline: none;
@@ -42,74 +48,50 @@
 }
 
 .video-presentation-clip__control-bar {
+  display: flex;
+  align-items: center;
   position: relative;
-  width: 280px;
-  height: 66px;
-  margin: 0 auto;;
+  width: 234px;
+  padding: 23px 23px 23px 25px;
+  margin: 0 auto;
   background-color: $video-control-bar-bg-color;
 }
 
 .video-presentation-clip__control-btn {
-  position: absolute;
+  position: relative;
 
   &--replay {
-    display: block;
-    position: absolute;
     width: 16px;
     height: 20px;
     padding: 0;
+    margin-right: 133px;
     border: none;
     outline: none;
-    top: 22px;
-    left: 25px;
     background: none;
     background-image: url(../img/icon-video-replay.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--replay:hover {
-
-  }
-
-  &--replay:active {
-
-  }
-
   &--cc {
-    display: block;
-    position: absolute;
     width: 32px;
     height: 20px;
     padding: 0;
+    margin-right: 31px;
     border: none;
     outline: none;
-    top: 23px;
-    left: 174px;
     background: none;
     background-image: url(../img/icon-video-subtitles.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--cc:hover {
-
-  }
-
-  &--cc:active {
-
-  }
-
   &--fullscreen {
-    display: block;
-    position: absolute;
     width: 20px;
     height: 20px;
     padding: 0;
     border: none;
     outline: none;
-    top: 23px;
-    left: 237px;
     background: none;
     background-image: url(../img/icon-video-fullscreen.svg);
     background-repeat: no-repeat;

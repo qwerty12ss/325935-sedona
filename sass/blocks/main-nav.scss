@@ -17,21 +17,20 @@
   text-align: center;
 
   &:last-child {
-    height: 55px;
     border-bottom: none;
   }
 }
 
 .main-nav__link {
+  @include font-style-bold($color: $font-color-secondary, $size: $font-size-menu);
   display: block;
-  height: 36px;
-  width: 320px;
-  padding-top: 18px;
+  width: 280px;
+  padding: 8px 20px;
   background-color: $active-element-bg-color;
-  @include font-style-menu;
   text-transform: uppercase;
   vertical-align: middle;
   text-decoration: none;
+  line-height: 39px;
 
   &:hover {
     background-color: $active-element-bg-color-hover;
