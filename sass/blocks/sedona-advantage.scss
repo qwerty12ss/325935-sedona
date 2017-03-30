@@ -1,0 +1,91 @@
+.sedona-advantage {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.sedona-advantage__info {
+  padding-top: 11px;
+  background-color: $sedona-advantage-bg-color;
+  text-align: center;
+
+  &--blue {
+    padding-top: 23px;
+    padding-bottom: 25px;
+    background-color: $sedona-advantage-bg-color-secondary;
+  }
+
+  &--padding-big {
+    padding-top: 38px;
+  }
+}
+
+.sedona-advantage__title {
+  @include font-style-bold;
+  margin-bottom: 13px;
+
+  &--white {
+    margin-bottom: 15px;
+    color: $font-color-secondary;
+  }
+}
+
+.sedona-advantage__number {
+  @include font-style-regular
+  display: block;
+  margin-bottom: 17px;
+
+  &--white {
+    margin-bottom: 20px;
+    color: $font-color-secondary;
+  }
+}
+
+.sedona-advantage__desc {
+  @include font-style-regular;
+  width: 280px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid $sedona-advantage-border-color;
+  margin: 0 auto;
+  line-height: 23px;
+  letter-spacing: 0em;
+
+  &--border-none {
+    border: none;
+  }
+
+  &--white {
+    padding-bottom: 11px;
+    color: $font-color-secondary;
+  }
+}
+
+.sedona-advantage__img {
+  display: block;
+  width: 320px;
+  height: 260px;
+}
+
+.sedona-advantage__city-info {
+  padding: 0;
+  margin: 38px 0 42px 0;
+  list-style: none;
+}
+
+.sedona-advantage__city-info-item {
+  text-align: left;
+  margin-bottom: 34px;
+  padding-left: 70px;
+}
+
+.sedona-advantage__city-info-title {
+  @include font-style-bold;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.sedona-advantage__city-info-desc {
+  @include font-style-regular;
+  width: 211px;
+  margin: 0;
+  line-height: 20px;
+}

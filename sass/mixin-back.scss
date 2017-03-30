@@ -1,0 +1,14 @@
+@mixin font-style-regular ($color: $font-color-base, $size: $font-size-regular, $transform: uppercase) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $size;
+  text-transform: $transform;
+}
+
+@mixin font-style-bold ($color: $font-color-base, $size: $font-size-header, $transform: uppercase) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $size;
+  text-transform: $transform;
+  font-weight: 700;
+}

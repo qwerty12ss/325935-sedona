@@ -1,0 +1,59 @@
+.social {
+  display: flex;
+  width: 151px;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 0px;
+}
+
+.social__icon {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $active-element-bg-color;
+
+  &:hover {
+    background-color: $active-element-bg-color-hover;
+  }
+
+  &:active {
+    color: $font-color-secondary-active;
+    background-color: $active-element-bg-color-active;
+  }
+
+  &--twitter::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    background-image: url(../img/icon-twitter.svg);
+    top: 17px;
+    right: 14px;
+  }
+
+  &--facebook::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 18px;
+    background-image: url(../img/icon-facebook.svg);
+    top: 14px;
+    right: 19px;
+  }
+
+  &--youtube::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 14px;
+    background-image: url(../img/icon-youtube.svg);
+    top: 17px;
+    right: 13px;
+  }
+}

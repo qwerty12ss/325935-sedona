@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 33px;
+  text-align: center;
+}
+
+.footer__hashtag {
+  @include font-style-bold($size: $font-size-header-bigger);
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.footer__copyright {
+  @include font-style-regular;
+  width: 129px;
+  margin: 48px auto 20px;
+  text-align: left;
+}

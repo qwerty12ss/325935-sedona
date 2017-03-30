@@ -1,0 +1,22 @@
+.video-presentation {
+  width: 320px;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid $sedona-advantage-border-color;
+  margin-bottom: 138px;
+}
+
+.video-presentation__title {
+  margin-bottom: 30px;
+  @include font-style-bold;
+}
+
+.video-presentation__text {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  @include font-style-regular;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}

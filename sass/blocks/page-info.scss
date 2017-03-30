@@ -1,0 +1,22 @@
+.page-info {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.page-info__title {
+  @include font-style-bold;
+  text-align: center;
+  padding: 0 30px;
+  margin: 0;
+  margin-bottom: 28px;
+  line-height: 26px;
+}
+
+.page-info__desc {
+  @include font-style-regular;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 26px;
+}

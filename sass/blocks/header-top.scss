@@ -1,0 +1,14 @@
+.header-top {
+  position: relative;
+  width: 320px;
+  padding-bottom: 56px;
+}
+
+.header-top__logo {
+  position: absolute;
+  display: block;
+  width: 102px;
+  bottom: -31px;
+  right: 50%;
+  transform: translateX(50%);
+}
