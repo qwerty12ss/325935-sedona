@@ -1,12 +1,38 @@
 .footer {
+  width: $mobile;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   margin-top: 33px;
   text-align: center;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    align-items: center;
+    justify-content: space-around;
+    width: $tablet;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    justify-content: space-around;
+    width: $desktop;
+    flex-direction: row;
+  }
 }
 
 .footer__hashtag {
   @include font-style-bold($size: $font-size-header-bigger);
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    margin: 0px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0px;
+  }
 }
 
 .footer__copyright {
@@ -14,4 +40,8 @@
   width: 129px;
   margin: 48px auto 20px;
   text-align: left;
+
+  @media (min-width: $tablet) {
+    margin: 0px;
+  }
 }

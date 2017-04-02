@@ -13,7 +13,7 @@
           <button class="main-nav__toggle main-nav__toggle--burger" type="button">Показать меню</button>
           <ul class="main-nav__list main-nav__list--visible">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--margin-right"><a class="main-nav__link main-nav__link--active">Фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
@@ -31,15 +31,15 @@
       </div>
       <section class="gallery">
         <article class="photo photo--big">
-          <a class="photo__img photo__img--big" href="#"><img src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280"></a>
-          <div class="photo__desc">
+          <a href="#"><img class="photo__img photo__img--big" src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280"></a>
+          <div class="photo__desc photo__desc--big">
             <h3 class="photo__title">Неродные просторы</h3>
             <p class="photo__autor">Автор фото: Борис</p>
             <a class="photo__like" href="#">1350</a>
           </div>
         </article>
-        <article class="photo photo">
-          <a class="photo__img" href="#"><img src="img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280"></a>
+        <article class="photo">
+          <a href="#"><img class="photo__img" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280"></a>
           <div class="photo__desc">
             <h3 class="photo__title">Местная растительность</h3>
             <p class="photo__autor">Автор фото: Сергей</p>
@@ -47,15 +47,15 @@
           </div>
         </article>
         <article class="photo">
-          <a class="photo__img" href="#"><img src="img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280"></a>
-          <div class="photo__desc">
+          <a href="#"><img class="photo__img" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280"></a>
+          <div class="photo__desc photo__desc--bg-darker">
             <h3 class="photo__title">Дорога на север</h3>
             <p class="photo__autor">Автор фото: Петр</p>
             <a class="photo__like" href="#">96</a>
           </div>
         </article>
         <article class="photo">
-          <a class="photo__img" href="#"><img src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола" width="280" height="280"></a>
+          <a href="#"><img class="photo__img" src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола" width="280" height="280"></a>
           <div class="photo__desc">
             <h3 class="photo__title">Мост Дьявола</h3>
             <p class="photo__autor">Автор фото: Антон</p>
@@ -74,11 +74,9 @@
                 <button class="video-presentation-clip__time-slider" type="button"></button>
               </div>
             </div>
-            <div class="video-presentation-clip__control-bar">
-              <button class="video-presentation-clip__control-btn video-presentation-clip__control-btn--replay" type="button"></button>
-              <button class="video-presentation-clip__control-btn video-presentation-clip__control-btn--cc" type="button"></button>
-              <button class="video-presentation-clip__control-btn video-presentation-clip__control-btn--fullscreen" type="button"></button>
-            </div>
+            <button class="video-presentation-clip__control-btn video-presentation-clip__control-btn--replay" type="button"></button>
+            <button class="video-presentation-clip__control-btn video-presentation-clip__control-btn--cc" type="button"></button>
+            <button class="video-presentation-clip__control-btn video-presentation-clip__control-btn--fullscreen" type="button"></button>
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
-.header {
+.sedona-advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: $mobile;
   margin: 0 auto;
-  margin-bottom: 40px;
 
   @media (min-width: $tablet) and (max-width: $desktop) {
     width: $tablet;

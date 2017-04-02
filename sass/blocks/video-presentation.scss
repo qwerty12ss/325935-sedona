@@ -1,15 +1,33 @@
 .video-presentation {
-  width: 320px;
+  width: $mobile;
   padding-top: 20px;
   margin: 0 auto;
   text-align: center;
   border-top: 1px solid $sedona-advantage-border-color;
   margin-bottom: 138px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: $tablet - 120px;
+    padding: 20px 60px 0px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop - 400px;
+    padding: 20px 200px 0px;
+  }
 }
 
 .video-presentation__title {
   margin-bottom: 30px;
   @include font-style-bold;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: $font-size-header-big;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: $font-size-header-big;
+  }
 }
 
 .video-presentation__text {
@@ -19,4 +37,12 @@
   @include font-style-regular;
   line-height: 24px;
   letter-spacing: 0.01em;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 450px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 450px;
+  }
 }

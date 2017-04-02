@@ -1,4 +1,19 @@
 .gallery {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: $mobile - 40px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: $tablet - 120px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    width: $desktop;
+  }
 }

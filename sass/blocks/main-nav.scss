@@ -1,14 +1,23 @@
 .main-nav {
   position: relative;
+  font-size: 0px;
 }
 
 .main-nav__list {
-  width: 320px;
+  width: $mobile;
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
   z-index: 10;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .main-nav__item {
@@ -19,12 +28,30 @@
   &:last-child {
     border-bottom: none;
   }
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    display: inline-block;
+    border: none;
+
+    &--margin-right {
+      margin-right: 156px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: inline-block;
+    border: none;
+
+    &--margin-right {
+      margin-right: 244px;
+    }
+  }
 }
 
 .main-nav__link {
   @include font-style-bold($color: $font-color-secondary, $size: $font-size-menu);
   display: block;
-  width: 280px;
+  width: $mobile - 40px;
   padding: 8px 20px;
   background-color: $active-element-bg-color;
   text-transform: uppercase;
@@ -39,6 +66,42 @@
   &:active {
     color: $font-color-secondary-active;
     background-color: $active-element-bg-color-active;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 123px;
+    padding: 15px;
+    background: none;
+    line-height: 26px;
+    font-size: $font-size-regular;
+    color: $font-color-base;
+
+    &:hover {
+      background: none;
+    }
+
+    &:active {
+      color: $font-color-base;
+      background: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 209px;
+    padding: 15px;
+    background: none;
+    line-height: 26px;
+    font-size: $font-size-regular;
+    color: $font-color-base;
+
+    &:hover {
+      background: none;
+    }
+
+    &:active {
+      color: $font-color-base;
+      background: none;
+    }
   }
 }
 
@@ -60,5 +123,9 @@
 
   &--close {
     background-image: url(../img/icon-cross.svg);
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
   }
 }

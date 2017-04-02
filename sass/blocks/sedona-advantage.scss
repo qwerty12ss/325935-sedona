@@ -1,6 +1,24 @@
 .sedona-advantage {
-  width: 320px;
-  margin: 0 auto;
+  width: $mobile;
+  font-size: 0px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 256px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 400px;
+  }
+
+  &--big {
+    @media (min-width: $tablet) and (max-width: $desktop) {
+      width: $tablet;
+    }
+
+    @media (min-width: $desktop) {
+      width: $desktop;
+    }
+  }
 }
 
 .sedona-advantage__info {
@@ -8,20 +26,58 @@
   background-color: $sedona-advantage-bg-color;
   text-align: center;
 
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 170px;
+    padding: 23px 43px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 280px;
+    padding: 23px 60px;
+  }
+
   &--blue {
     padding-top: 23px;
     padding-bottom: 25px;
     background-color: $sedona-advantage-bg-color-secondary;
+    border-bottom: none;
   }
 
   &--padding-big {
     padding-top: 38px;
+
+    @media (min-width: $tablet) {
+      padding-top: 23px;
+    }
+  }
+
+  &--left {
+    @media (min-width: $tablet) {
+      float: left;
+    }
+  }
+
+  &--right {
+    @media (min-width: $tablet) {
+      float: right;
+    }
   }
 }
 
 .sedona-advantage__title {
   @include font-style-bold;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding: 0 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 60px;
+    line-height: 26px;
+    font-size: $font-size-header-bigger;
+  }
 
   &--white {
     margin-bottom: 15px;
@@ -34,6 +90,10 @@
   display: block;
   margin-bottom: 17px;
 
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
+  }
+
   &--white {
     margin-bottom: 20px;
     color: $font-color-secondary;
@@ -42,12 +102,25 @@
 
 .sedona-advantage__desc {
   @include font-style-regular;
-  width: 280px;
+  width: $mobile - 40px;
   padding-bottom: 26px;
   border-bottom: 1px solid $sedona-advantage-border-color;
   margin: 0 auto;
   line-height: 23px;
   letter-spacing: 0em;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 160px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 21.6px;
+  }
 
   &--border-none {
     border: none;
@@ -56,31 +129,97 @@
   &--white {
     padding-bottom: 11px;
     color: $font-color-secondary;
+
+    @media (min-width: $tablet) {
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 170px;
+      padding-right: 55px;
+      padding-left: 55px;
+      padding-bottom: 21.6px;
+    }
   }
 }
 
 .sedona-advantage__img {
   display: block;
-  width: 320px;
+  width: $mobile;
   height: 260px;
+  background-color: rgba(234, 182, 168, 1);
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    display: inline-block;
+    width: $tablet - 256px;
+  }
+
+  @media (min-width: $desktop) {
+    display: inline-block;
+    width: $desktop - 400px;
+  }
 }
 
 .sedona-advantage__city-info {
   padding: 0;
   margin: 38px 0 42px 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    margin-top: 38px;
+    margin-bottom: 30px;
+  }
 }
 
 .sedona-advantage__city-info-item {
   text-align: left;
   margin-bottom: 34px;
   padding-left: 70px;
+
+  &--house {
+    @media (min-width: $tablet) {
+      order: 1;
+    }
+  }
+
+  &--souvenir {
+    @media (min-width: $tablet) {
+      order: 3;
+    }
+  }
+
+  &--food {
+    @media (min-width: $tablet) {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 162px;
+    padding: 120px 47px 0px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 306px;
+    padding: 120px 47px 0px;
+    text-align: center;
+  }
 }
 
 .sedona-advantage__city-info-title {
   @include font-style-bold;
   margin: 0;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-header-bigger;
+    margin-bottom: 21px;
+    line-height: 28px;
+  }
 }
 
 .sedona-advantage__city-info-desc {
@@ -88,4 +227,8 @@
   width: 211px;
   margin: 0;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }

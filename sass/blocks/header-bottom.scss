@@ -1,5 +1,5 @@
 .header-bottom {
-  width: 320px;
+  width: $mobile;
   height: 299px;
   padding-top: 90px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
@@ -10,6 +10,20 @@
   &--secondary {
     height: 106px;
     padding-top: 52px;
+  }
+
+  @media (min-width: $tablet) and (max-height: $desktop) {
+    width: $tablet;
+    height: 518px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 518px;
+    text-align: center;
+    vertical-align: middle;
   }
 }
 

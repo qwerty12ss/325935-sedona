@@ -1,8 +1,16 @@
 .choice-hotels {
-  width: 320px;
+  width: $mobile;
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .choice-hotels__title {
@@ -11,6 +19,14 @@
   margin: 0;
   margin-bottom: 20px;
   letter-spacing: 0.01em;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: $font-size-header-big;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: $font-size-header-big;
+  }
 }
 
 .choice-hotels__text {
@@ -19,6 +35,14 @@
   margin: 0;
   margin-bottom: 35px;
   line-height: 24px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding: 0 155px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 371px;
+  }
 }
 
 .choice-hotels__search-btn {
@@ -31,6 +55,14 @@
   background-color: $active-element-bg-color;
   text-decoration: none;
 
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    padding: 17px 109px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 17px 109px;
+  }
+
   &:hover {
     background-color: $active-element-bg-color-hover;
   }
@@ -39,4 +71,18 @@
     color: $font-color-secondary-active;
     background-color: $active-element-bg-color-active;
   }
+}
+
+.choice-hotels__map {
+  width: 320px;
+  height: 350px;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+  }
+
 }
